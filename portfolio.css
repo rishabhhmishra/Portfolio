@@ -1,6 +1,7 @@
 :root {
     --main-white: #f0f0f0;
-    --main-blue: #45567d;
+    --main-orange:#ff7f50;
+    --main-gray:#1f1f1f;
    }
   
   * {
@@ -11,7 +12,7 @@
   *,
   *::before,
   *::after {
-    box-sizing: inherit;
+    box-sizing:inherit;
   }
   
   html {
@@ -77,6 +78,17 @@
   img {
     display: block;
     width: 100%;
+
+  }
+.welimg{
+  
+  width: 15%;
+border-radius: 10px;
+box-shadow: 0 8px 32px 0 rgba(203, 204, 209, 0.37);
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+ box-shadow: 0 8px 32px 0 rgba(0,0,0,0.9);
+;
   }
   
   /* nav */
@@ -91,7 +103,8 @@
     background: #181719;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: auto;
   }
   
   .nav-list {
@@ -117,7 +130,7 @@
   }
   
   .nav-list a:hover {
-    color:sandybrown;
+    color:var(--main-orange);
 }
     
   .welcome-section {
@@ -138,13 +151,19 @@
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    text-align: left;
+  padding: 5px;
+  background: rgb(0 0 0 / 44%);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.9);
+  backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
   }
     
   .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
-    background: #1f1f1f;
+    padding: 10rem 2rem;              
+    background: var(--main-gray);
   }
   
   .projects-section-header {
@@ -191,7 +210,7 @@
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color:var(--main-orange);
   }
   
   .project-image {
@@ -218,7 +237,7 @@
   }
   
   .btn-show-all:hover {
-    background: var(--main-red);
+    background: var(--main-orange);
   }
   
   .btn-show-all:hover > i {
@@ -268,13 +287,13 @@
   
   .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
+    text-shadow: 2px 2px 1px var(--main-gray);
     transition: transform 0.3s ease-out;
   }
   
   .contact-details:hover {
     transform: translateY(8px);
-    color: sandybrown;
+    color: var(--main-orange);
   }
   
   
@@ -283,8 +302,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: #ff7f50;
-    border-top: 4px solid #1f1f1f;
+    background: var(--main-orange);
+    border-top: 4px solid var(--main-gray);;
   }
   
   footer > p {
@@ -306,4 +325,5 @@
       text-align: center;
     }
   }
+  
   
